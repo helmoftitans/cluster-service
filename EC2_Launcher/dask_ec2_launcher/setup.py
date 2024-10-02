@@ -7,18 +7,21 @@ setup(
     author="Sudhindra Desai",
     author_email="helmoftitans@gmail.com",
     url="https://github.com/helmoftitans/cluster-service",
-    packages=find_packages(),
+    packages=find_packages(),  # Automatically find packages in the project
     install_requires=[
-        "boto3",
-        "fabric",
-        "dask",
-        "distributed",
-        "s3fs"
+        "boto3>=1.26.0",  # AWS SDK
+        "fabric>=2.7.0",  # SSH and automation tool
+        "dask[distributed]~=2023.1",  # Dask for distributed computing
+        "s3fs>=2023.1",  # S3 integration
+        "decorator==4.4.2",  # Pin decorator version to 4.4.2 for moviepy compatibility
+        "jedi>=0.16",  # Include jedi for ipython compatibility
+        "moviepy==1.0.3",  # Ensure moviepy works with decorator 4.4.2
+        "ipython>=7.34.0",  # Specify the version of ipython that works with jedi
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.6',  # Python version requirement
 )
