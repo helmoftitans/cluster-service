@@ -45,3 +45,5 @@ env.bak/
 
 # Ignore IDE-specific files
 .idea/
+
+.secret
