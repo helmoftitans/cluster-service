@@ -1,0 +1,9 @@
+# Dask EC2 Launcher
+
+A Python decorator to easily launch Dask on AWS EC2 instances, configure workers, and run distributed Dask tasks in the cloud.
+
+## Installation
+
+```bash
+pip install dask-ec2-launcher
+
