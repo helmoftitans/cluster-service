@@ -6,6 +6,7 @@ setup(
     description="A decorator for launching Dask on AWS EC2 instances",
     author="Sudhindra Desai",
     author_email="helmoftitans@gmail.com",
+    url="https://github.com/helmoftitans/cluster-service",
     packages=find_packages(),
     install_requires=[
         "boto3",

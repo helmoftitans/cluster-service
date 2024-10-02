@@ -42,3 +42,6 @@ env.bak/
 
 # AWS Key files
 *.pem
+
+# Ignore IDE-specific files
+.idea/
